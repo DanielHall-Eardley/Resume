@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daniel Hall-Eardley's Resume</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>
+      <span>Daniel Hall-Eardley</span> |
+      <span>350chevy8@gmail.com</span> |
+      <span>647-268-1072</span>
+    </h1>
+  </header>
+  <section class="resume-section">
+    <h3 class="section-heading">About Me</h3>
+    <p>
+      I am a web developer looking for an entry level position. Web development is the beginning of a second career path that
+      I am excited to embark upon. I chose web development because of its complex and fluid nature; I have found that I am the
+      happiest when challenged with complex problems and the need to continually learn/improve on a daily basis. I also
+      enjoy the act of creation and web development as a medium has numerous creative possibilities that are growing
+      as the technology continues to evolve.
+    </p>
+  </section>
+  <section class="resume-section">
+    <h3 class="section-heading">Technical Skills</h3>
+    <ul>
+      <li>Development of web applications using React.js and Vue.js frameworks</li>
+      <li>Intermediate knowledge of JavaScript</li>
+      <li>Intermediate knowledge HTML and CSS</li>
+      <li>Usage of Sass and intermediate knowledge of CSS</li>
+      <li>Responsive development of web applications across different platforms</li>
+      <li>RESTful server development in Node.js using Express</li>
+      <li>Data retrieval from third party APIs; Google, Youtube</li>
+      <li>Data modeling and retrieval from MongoDB database using Mongoose</li>
+      <li>Understanding of common data structures and algorithms</li>
+      <li>Understanding of Big O notation</li>
+      <li>Implemented signup/login authentication with JWT and Bcrypt</li>
+      <li>Built two applications with React Native</li>
+    </ul>
+  </section>
+  <section class="resume-section">
+    <h3 class="section-heading">Education</h3>
+    <h4 class="paragraph-heading"><i>BrainStation, 2018</i></h4>
+    <p class="education-paragraph">
+      This full-time boot-camp taught me foundational skills needed for web-development. The program focused on a hands-on
+      approach within a project-based learning environment, in which among other things, I was taught HTML to structure my
+      applications, CSS for styling and JavaScript, both to interact with the DOM and build RESTful servers with Node.js.
+    </p>
+    <h4 class="paragraph-heading"><i>Udemy, 2019 - Ongoing</i></h4>
+    <p class="education-paragraph">
+      Udemy has been a valuable resource for deepening my web development knowledge and learning new skills. All the skills
+      that I am learning are being put to use, both in practice applications and my current large scale project.
+    </p>
+    <ul>
+      <li>Advanced JavaScript Concepts - Andrew Neagoie</li>
+      <li>NodeJS - The Complete Guide - Maximilian Schwarzmuller</li>
+      <li>VueJS 2 - The Complete Guide - Maximilian Schwarzmuller</li>
+      <li>Advanced CSS and Sass - Jonas Schmedtmann</li>
+      <li>The Coding Interview Bootcamp - Stephen Grider</li>
+    </ul>
+  </section>
+  <section class="resume-section">
+    <h3 class="section-heading">Experience</h3>
+    <p>
+      I have completed numerous technical assessments, practice applications and two different versions of my personal
+      website, however the most up to date example of my coding is my current project: Showhook. The idea behind Showhook is
+      to create an application in which: musicians can search for venues to perform at, venues can hire performers and anyone
+      can search for shows to attend. It is a complex online marketplace that I am building with Vue.js, Node + Express and
+      Mongoose + MongoDB. The code is available to view on GitHub and I am happy to give a more detailed explanation or answer
+      questions regarding the application in person.
+    </p>
+  </section>
+  <footer>
+    <div class="link-container">
+      <a href="https://github.com/DanielHall-Eardley">
+        https://github.com/DanielHall-Eardley
+      </a>
+      <a href="https://personal-website-455c9.firebaseapp.com">
+        https://personal-website-455c9.firebaseapp.com
+      </a>
+    </div>
+    <span>&copy; Daniel Hall-Eardley 2020</span>
+  </footer>
+</body>
+<style>
+  :root {
+    --spacing-bg: 3rem;
+    --spacing-md: 1.8rem;
+    --spacing-sm: 1rem;
+
+    --heading-sz: 4rem;
+    --section-heading-sz: 2.8rem;
+    --default-font-sz: 2.6rem;
+
+    --main-color: #373737;
+    --color-light: #f4f4f4;
+    --color-dark: #dcd0c0;
+    --contrast-color: #c0b283;
+  }
+
+  html {
+    font-size: 62.25%;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    padding: var(--spacing-bg);
+    background-color: var(--main-color);
+    margin-bottom: var(--spacing-bg);
+  }
+
+  header h1 {
+    display: flex;
+    justify-content: space-between;    
+    color: var(--contrast-color);
+    font-size: var(--heading-sz);
+    font-weight: 200;
+  }
+
+  li {
+    margin-left: 3.5rem; 
+    margin-right: var(--spacing-bg); 
+    font-size: var(--default-font-sz);
+    line-height: 150%;
+  }
+
+  p {
+    margin: 0 var(--spacing-md);
+    line-height: 125%;
+    color: var(--main-color);
+    font-size: var(--default-font-sz);
+  }
+
+  .resume-section {
+    margin: 0 var(--spacing-bg);
+    margin-bottom: var(--spacing-md);
+    padding-bottom: var(--spacing-md);
+    border: solid 1px var(--color-dark);
+    background-color: var(--color-light);
+  }
+
+  .section-heading {
+    background-color: var(--color-dark);
+    margin-bottom: var(--spacing-md);
+    padding: var(--spacing-sm);
+    font-size: var(--section-heading-sz);
+    font-weight: 100;
+    color: var(--main-color);
+    text-transform: uppercase;
+  }
+
+  .paragraph-heading {
+    margin: 0 var(--spacing-md);
+    font-size: var(--default-font-sz);
+  }
+
+  .education-paragraph {
+    margin: var(--spacing-sm) var(--spacing-md); 
+  }
+
+  footer {
+    background-color: var(--main-color);
+    padding: var(--spacing-bg);
+    display: flex;
+    margin-top: var(--spacing-bg);
+  }
+
+  .link-container {
+    border-right: solid 1px var(--contrast-color);
+    padding-right: var(--spacing-bg);
+    margin-right: var(--spacing-bg);
+  }
+
+  .link-container a, footer span {
+    display: block;
+    text-decoration: none;
+    font-size: var(--default-font-sz);
+    color: var(--contrast-color);
+    transition: all .4s;
+  }
+
+  .link-container a:hover {
+    color: var(--color-light);
+  }
+
+  .link-container a:not(:last-child) {
+    margin-bottom: var(--spacing-sm);
+  }
+
+  footer span {
+    align-self: flex-end;
+    margin-left: auto;
+  }
+</style>
+</html>
