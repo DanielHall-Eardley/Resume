@@ -9,15 +9,15 @@
 <body>
   <header>
     <h1>
-      <span>Daniel Hall-Eardley</span> |
-      <span>350chevy8@gmail.com</span> |
+      <span>Daniel Hall-Eardley</span> 
+      <span>350chevy8@gmail.com</span> 
       <span>647-268-1072</span>
     </h1>
   </header>
   <section class="resume-section">
     <h3 class="section-heading">About Me</h3>
     <p>
-      I am a web developer looking for an entry level position. Web development is the beginning of a second career path that
+      I am a web developer looking for employment within a growing and innovative company. Web development is the beginning of a second career path that
       I am excited to embark upon. I chose web development because of its complex and fluid nature; I have found that I am the
       happiest when challenged with complex problems and the need to continually learn/improve on a daily basis. I also
       enjoy the act of creation and web development as a medium has numerous creative possibilities that are growing
@@ -66,8 +66,8 @@
     <h3 class="section-heading">Experience</h3>
     <p>
       I have completed numerous technical assessments, practice applications and two different versions of my personal
-      website, however the most up to date example of my coding is my current project: Showhook. The idea behind Showhook is
-      to create an application in which: musicians can search for venues to perform at, venues can hire performers and anyone
+      website, however the most up to date example of my coding is my current project, Showhook. The idea behind Showhook is
+      to create an application in which musicians can search for venues to perform at, venues can hire performers and anyone
       can search for shows to attend. It is a complex online marketplace that I am building with Vue.js, Node + Express and
       Mongoose + MongoDB. The code is available to view on GitHub and I am happy to give a more detailed explanation or answer
       questions regarding the application in person.
@@ -106,6 +106,12 @@
     font-family: 'Montserrat', sans-serif;
   }
 
+  @media only screen and (max-width: 650px) {
+    html {
+      font-size: 45%
+    }
+  }
+
   * {
     box-sizing: border-box;
     margin: 0;
@@ -118,12 +124,29 @@
     margin-bottom: var(--spacing-bg);
   }
 
+  @media only screen and (max-width: 600px) {
+    header {
+      margin-bottom: 0;
+    }
+  }
+
   header h1 {
     display: flex;
     justify-content: space-between;    
     color: var(--contrast-color);
     font-size: var(--heading-sz);
     font-weight: 200;
+  }
+
+  @media only screen and (max-width: 1200px) {
+    header h1 {
+      flex-direction: column;
+      font-size: 3rem;
+    }
+
+    h1 span:not(:last-child) {
+      margin-bottom: var(--spacing-sm);
+    }
   }
 
   li {
@@ -146,6 +169,14 @@
     padding-bottom: var(--spacing-md);
     border: solid 1px var(--color-dark);
     background-color: var(--color-light);
+  }
+
+  @media only screen and (max-width: 600px) {
+    .resume-section {
+      margin: 0;
+      margin-bottom: 0;
+      border: none;
+    }
   }
 
   .section-heading {
@@ -174,10 +205,26 @@
     margin-top: var(--spacing-bg);
   }
 
+  @media only screen and (max-width: 600px) {
+    footer {
+      margin-top: 0;
+      flex-direction: column;
+    }
+  }
+
   .link-container {
     border-right: solid 1px var(--contrast-color);
     padding-right: var(--spacing-bg);
     margin-right: var(--spacing-bg);
+  }
+
+  @media only screen and (max-width: 600px) {
+    .link-container {
+      margin: 0;
+      padding: 0;
+      border: none;
+      margin-bottom: var(--spacing-sm);
+    }
   }
 
   .link-container a, footer span {
@@ -186,6 +233,12 @@
     font-size: var(--default-font-sz);
     color: var(--contrast-color);
     transition: all .4s;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .link-container a {
+      font-size: 2.2rem;
+    }
   }
 
   .link-container a:hover {
@@ -199,6 +252,14 @@
   footer span {
     align-self: flex-end;
     margin-left: auto;
+  }
+
+  @media only screen and (max-width: 600px) {
+    footer span {
+      align-self: flex-start;
+      margin: 0;
+      font-size: 1.8rem;
+    }
   }
 </style>
 </html>
