@@ -5,6 +5,184 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Daniel Hall-Eardley's Resume</title>
   <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --spacing-bg: 3rem;
+      --spacing-md: 1.8rem;
+      --spacing-sm: 1rem;
+  
+      --heading-sz: 4rem;
+      --section-heading-sz: 2.8rem;
+      --default-font-sz: 2.6rem;
+  
+      --main-color: #373737;
+      --color-light: #f4f4f4;
+      --color-dark: #dcd0c0;
+      --contrast-color: #c0b283;
+    }
+  
+    html {
+      font-size: 62.25%;
+      font-family: 'Montserrat', sans-serif;
+    }
+  
+    @media only screen and (max-width: 650px) {
+      html {
+        font-size: 45%
+      }
+    }
+  
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+  
+    header {
+      padding: var(--spacing-bg);
+      background-color: var(--main-color);
+      margin-bottom: var(--spacing-bg);
+    }
+  
+    @media only screen and (max-width: 600px) {
+      header {
+        margin-bottom: 0;
+      }
+    }
+  
+    header h1 {
+      display: flex;
+      justify-content: space-between;
+      color: var(--contrast-color);
+      font-size: var(--heading-sz);
+      font-weight: 200;
+    }
+  
+    @media only screen and (max-width: 1200px) {
+      header h1 {
+        flex-direction: column;
+        font-size: 3rem;
+      }
+  
+      h1 span:not(:last-child) {
+        margin-bottom: var(--spacing-sm);
+      }
+    }
+  
+    li {
+      margin-left: 3.5rem;
+      margin-right: var(--spacing-bg);
+      font-size: var(--default-font-sz);
+      line-height: 150%;
+    }
+  
+    p {
+      margin: 0 var(--spacing-md);
+      line-height: 125%;
+      color: var(--main-color);
+      font-size: var(--default-font-sz);
+    }
+  
+    .resume-section {
+      margin: 0 var(--spacing-bg);
+      margin-bottom: var(--spacing-md);
+      padding-bottom: var(--spacing-md);
+      border: solid 1px var(--color-dark);
+      background-color: var(--color-light);
+    }
+  
+    @media only screen and (max-width: 600px) {
+      .resume-section {
+        margin: 0;
+        margin-bottom: 0;
+        border: none;
+      }
+    }
+  
+    .section-heading {
+      background-color: var(--color-dark);
+      margin-bottom: var(--spacing-md);
+      padding: var(--spacing-sm);
+      font-size: var(--section-heading-sz);
+      font-weight: 100;
+      color: var(--main-color);
+      text-transform: uppercase;
+    }
+  
+    .paragraph-heading {
+      margin: 0 var(--spacing-md);
+      font-size: var(--default-font-sz);
+    }
+  
+    .education-paragraph {
+      margin: var(--spacing-sm) var(--spacing-md);
+    }
+  
+    footer {
+      background-color: var(--main-color);
+      padding: var(--spacing-bg);
+      display: flex;
+      margin-top: var(--spacing-bg);
+    }
+  
+    @media only screen and (max-width: 600px) {
+      footer {
+        margin-top: 0;
+        flex-direction: column;
+      }
+    }
+  
+    .link-container {
+      border-right: solid 1px var(--contrast-color);
+      padding-right: var(--spacing-bg);
+      margin-right: var(--spacing-bg);
+    }
+  
+    @media only screen and (max-width: 600px) {
+      .link-container {
+        margin: 0;
+        padding: 0;
+        border: none;
+        margin-bottom: var(--spacing-sm);
+      }
+    }
+  
+    .link-container a,
+    footer span {
+      display: block;
+      text-decoration: none;
+      font-size: var(--default-font-sz);
+      color: var(--contrast-color);
+      transition: all .4s;
+    }
+  
+    @media only screen and (max-width: 600px) {
+      .link-container a {
+        font-size: 2.2rem;
+      }
+    }
+  
+    .link-container a:hover {
+      color: var(--color-light);
+    }
+  
+    .link-container a:not(:last-child) {
+      margin-bottom: var(--spacing-sm);
+    }
+  
+    footer span {
+      align-self: flex-end;
+      margin-left: auto;
+    }
+  
+    @media only screen and (max-width: 600px) {
+      footer span {
+        align-self: flex-start;
+        margin: 0;
+        font-size: 1.8rem;
+      }
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -85,181 +263,4 @@
     <span>&copy; Daniel Hall-Eardley 2020</span>
   </footer>
 </body>
-<style>
-  :root {
-    --spacing-bg: 3rem;
-    --spacing-md: 1.8rem;
-    --spacing-sm: 1rem;
-
-    --heading-sz: 4rem;
-    --section-heading-sz: 2.8rem;
-    --default-font-sz: 2.6rem;
-
-    --main-color: #373737;
-    --color-light: #f4f4f4;
-    --color-dark: #dcd0c0;
-    --contrast-color: #c0b283;
-  }
-
-  html {
-    font-size: 62.25%;
-    font-family: 'Montserrat', sans-serif;
-  }
-
-  @media only screen and (max-width: 650px) {
-    html {
-      font-size: 45%
-    }
-  }
-
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-
-  header {
-    padding: var(--spacing-bg);
-    background-color: var(--main-color);
-    margin-bottom: var(--spacing-bg);
-  }
-
-  @media only screen and (max-width: 600px) {
-    header {
-      margin-bottom: 0;
-    }
-  }
-
-  header h1 {
-    display: flex;
-    justify-content: space-between;    
-    color: var(--contrast-color);
-    font-size: var(--heading-sz);
-    font-weight: 200;
-  }
-
-  @media only screen and (max-width: 1200px) {
-    header h1 {
-      flex-direction: column;
-      font-size: 3rem;
-    }
-
-    h1 span:not(:last-child) {
-      margin-bottom: var(--spacing-sm);
-    }
-  }
-
-  li {
-    margin-left: 3.5rem; 
-    margin-right: var(--spacing-bg); 
-    font-size: var(--default-font-sz);
-    line-height: 150%;
-  }
-
-  p {
-    margin: 0 var(--spacing-md);
-    line-height: 125%;
-    color: var(--main-color);
-    font-size: var(--default-font-sz);
-  }
-
-  .resume-section {
-    margin: 0 var(--spacing-bg);
-    margin-bottom: var(--spacing-md);
-    padding-bottom: var(--spacing-md);
-    border: solid 1px var(--color-dark);
-    background-color: var(--color-light);
-  }
-
-  @media only screen and (max-width: 600px) {
-    .resume-section {
-      margin: 0;
-      margin-bottom: 0;
-      border: none;
-    }
-  }
-
-  .section-heading {
-    background-color: var(--color-dark);
-    margin-bottom: var(--spacing-md);
-    padding: var(--spacing-sm);
-    font-size: var(--section-heading-sz);
-    font-weight: 100;
-    color: var(--main-color);
-    text-transform: uppercase;
-  }
-
-  .paragraph-heading {
-    margin: 0 var(--spacing-md);
-    font-size: var(--default-font-sz);
-  }
-
-  .education-paragraph {
-    margin: var(--spacing-sm) var(--spacing-md); 
-  }
-
-  footer {
-    background-color: var(--main-color);
-    padding: var(--spacing-bg);
-    display: flex;
-    margin-top: var(--spacing-bg);
-  }
-
-  @media only screen and (max-width: 600px) {
-    footer {
-      margin-top: 0;
-      flex-direction: column;
-    }
-  }
-
-  .link-container {
-    border-right: solid 1px var(--contrast-color);
-    padding-right: var(--spacing-bg);
-    margin-right: var(--spacing-bg);
-  }
-
-  @media only screen and (max-width: 600px) {
-    .link-container {
-      margin: 0;
-      padding: 0;
-      border: none;
-      margin-bottom: var(--spacing-sm);
-    }
-  }
-
-  .link-container a, footer span {
-    display: block;
-    text-decoration: none;
-    font-size: var(--default-font-sz);
-    color: var(--contrast-color);
-    transition: all .4s;
-  }
-
-  @media only screen and (max-width: 600px) {
-    .link-container a {
-      font-size: 2.2rem;
-    }
-  }
-
-  .link-container a:hover {
-    color: var(--color-light);
-  }
-
-  .link-container a:not(:last-child) {
-    margin-bottom: var(--spacing-sm);
-  }
-
-  footer span {
-    align-self: flex-end;
-    margin-left: auto;
-  }
-
-  @media only screen and (max-width: 600px) {
-    footer span {
-      align-self: flex-start;
-      margin: 0;
-      font-size: 1.8rem;
-    }
-  }
-</style>
 </html>
